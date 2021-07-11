@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <section class="uploading">
+      <div class="flex">
+        <div class="flex_title">
+          <p><%=title%></p>
+        </div>
+        <div class="flex_content">
+          <div class="flex_content_card">
+            <p>upload a file</p>
+
+            <form action="/upload" method="post" enctype="multipart/form-data">
+              <input type="file" class="btn" id="myFile" name="file" />
+              <button class="btn" type="submit">UPLOAD</button>
+            </form>
+          </div>
+          <div class="flex_content_card">
+            <p>view file</p>
+            <button class="btn"><a href="/list">view</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%include partials/scriptinc%>
+  </body>
+</html>

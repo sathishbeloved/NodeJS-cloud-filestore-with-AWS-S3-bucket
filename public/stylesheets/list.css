@@ -1,0 +1,72 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #e1e5ea;
+}
+.line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  background: #f55c47;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 19px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #ff7b54;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.viewing {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+.flex {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 2%;
+}
+.flex_title {
+  flex: 1;
+  text-align: center;
+  font-size: 3rem;
+}
+.key {
+  text-transform: none;
+}
+.flex_content {
+  flex: 1;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex_content p {
+  font-size: 2rem;
+}
+.flex_content_table {
+  flex: 1;
+  display: flex;
+}
+.flex_content_table_contents table {
+  width: 100%;
+}
+.flex_content_table_contents table th,
+.flex_content_table_contents table td {
+  padding: 25px;
+  font-size: 1.3rem;
+}

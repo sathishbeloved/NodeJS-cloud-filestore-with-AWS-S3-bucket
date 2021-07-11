@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <section class="uploading">
+      <div class="flex">
+        <div class="flex_title">
+          <p>Online Cloud Storage System</p>
+        </div>
+        <div class="flex_content">
+          <div class="flex_content_card">
+            <p>rename a file</p>
+
+            <h6><%=title%> <%=oldname%></h6>
+            <form action="/rename/<%=oldname%>/succ" method="POST" id="myform">
+              <input type="text" id="newname" name="newname" />
+              <button class="btn" type="submit">RENAME</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%include partials/scriptinc%>
+  </body>
+</html>

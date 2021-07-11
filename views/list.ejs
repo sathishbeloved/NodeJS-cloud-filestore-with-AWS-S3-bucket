@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List files</title>
+    <link rel="stylesheet" href="/stylesheets/list.css" />
+  </head>
+  <body>
+    <section class="viewing">
+      <div class="flex">
+        <div class="flex_title">
+          <p>Online Cloud Storage System</p>
+        </div>
+        <div class="flex_content">
+          <div class="flex_content_title">
+            <p>List of items</p>
+          </div>
+          <div class="flex_content_table">
+            <div class="flex_content_table_contents">
+              <table class="tab">
+                <tr>
+                  <th>Name</th>
+                  <th>Time</th>
+                  <th>size</th>
+                  <th>Rename</th>
+                  <th>Download</th>
+                  <th>Delete</th>
+                </tr>
+                <% for(var i=0; i < bucketList.length; i++) { %>
+                <tr class="tablecol">
+                  <td class="key"><%= bucketList[i].Key %></td>
+
+                  <td><%= bucketList[i].LastModified %></td>
+
+                  <td><%= bucketList[i].Size %></td>
+                  <td>
+                    <button class="btn">
+                      <a href="<%= 'rename/'+bucketList[i].Key %>">Rename</a>
+                    </button>
+                  </td>
+
+                  <td>
+                    <button class="btn">
+                      <a
+                        href="<%= 'https://sathishmybucketh.s3.ap-south-1.amazonaws.com/'+bucketList[i].Key %>"
+                        >Download</a
+                      >
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn">
+                      <a href="<%= 'delete/'+bucketList[i].Key %>">Delete</a>
+                    </button>
+                  </td>
+                </tr>
+
+                <% } %>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%include partials/scriptinc%>
+  </body>
+</html>
