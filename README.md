@@ -29,11 +29,9 @@ RUN THE PROGRAM:
 nodemon start 
 
 ```
-- Enter your query(*e.g. 'Prank Videos', 'Shreya Ghosal', 'Girls like you' etc.*) to browse videos.
+- In the main page upload the files you want to store in cloud.
 
-- **Click on `Search` icon.**
-
-- Navigate through the dropdown menu to sort the results.
+- **Click on `View` icon to view the existing files.**
 
 
 
@@ -42,3 +40,6 @@ nodemon start
 ## Author
 
 **[Sathish kumar P](https://www.linkedin.com/in/sathishbeloved/)**
+
+
+
