@@ -41,4 +41,4 @@ nodemon start
 
 ## Author
 
-**[Vinit Shahdeo](https://www.linkedin.com/in/sathishbeloved/)**
+**[Sathish kumar P](https://www.linkedin.com/in/sathishbeloved/)**
